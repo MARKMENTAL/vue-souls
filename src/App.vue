@@ -79,12 +79,15 @@
     .sidebar {
       width: 100%;
       height: auto;
-      position: static;
+      position: relative;
       padding-bottom: 1rem;
+      display:block;
+      text-align:center;
     }
 
-    .logo {
-      display: block;
+    .logo{
+      width: 100px;
+      margin-bottom: -20px;
     }
 
     .main {
