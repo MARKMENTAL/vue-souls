@@ -15,6 +15,16 @@ const router = createRouter({
       component: () => import('../views/DarkView.vue')
     },
     {
+      path: '/bb',
+      name: 'bb',
+      component: () => import('../views/BloodView.vue')
+    },
+    {
+      path: '/des',
+      name: 'des',
+      component: () => import('../views/DemonView.vue')
+    },
+    {
       path: '/er',
       name: 'er',
       component: () => import('../views/EldenView.vue')

@@ -5,11 +5,13 @@
 <template>
   <header>
     <div class="sidebar">
-      <img alt="Estus Flask" class="logo" src="https://static.wikia.nocookie.net/darksouls/images/0/08/Estus_Flask_%28DSIII%29_-_01.png" />
+      <img alt="Estus Flask" class="logo flask-image" src="https://static.wikia.nocookie.net/darksouls/images/0/08/Estus_Flask_%28DSIII%29_-_01.png" />
       <nav>
         <RouterLink to="/" style="color: gold;">Home</RouterLink>
         <RouterLink to="/about" style="color: gold;">About</RouterLink>
+        <RouterLink to="/des" style="color: gold;">Demon's Souls</RouterLink>
         <RouterLink to="/ds" style="color: gold;">Dark Souls</RouterLink>
+        <RouterLink to="/bb" style="color: gold;">Bloodborne</RouterLink>
         <RouterLink to="/er" style="color: gold;">Elden Ring</RouterLink>
       </nav>
     </div>
@@ -46,6 +48,10 @@
     width: 100px;
   }
 
+  .flask-image {
+    animation: flask-animation 2s infinite;
+  }
+
   nav {
     display: flex;
     flex-direction: column;
@@ -78,11 +84,23 @@
     }
 
     .logo {
-      display: none;
+      display: block;
     }
 
     .main {
       margin-left: 0;
+    }
+  }
+
+  @keyframes flask-animation {
+    0% {
+      transform: rotate(0deg) translateY(0px);
+    }
+    50% {
+      transform: rotate(5deg) translateY(-3px);
+    }
+    100% {
+      transform: rotate(0deg) translateY(0);
     }
   }
 </style>
