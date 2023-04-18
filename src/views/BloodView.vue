@@ -1,7 +1,7 @@
 <template>
     <main style="text-align:center;">
       <h1>{{ gameData.title }}</h1>
-      <img :src="gameData.image" :alt="gameData.title + ' box art'" class="slide-in" idth="200" />
+      <img :src="gameData.image" :alt="gameData.title + ' box art'" class="slide-in" width="200" />
       <p class="slide-in">{{ gameData.description }}</p>
     </main>
   </template>

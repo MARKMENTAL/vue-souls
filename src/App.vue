@@ -7,12 +7,12 @@
     <div class="sidebar">
       <img alt="Estus Flask" class="logo flask-image" src="https://static.wikia.nocookie.net/darksouls/images/0/08/Estus_Flask_%28DSIII%29_-_01.png" />
       <nav>
-        <RouterLink to="/" style="color: gold;">Home</RouterLink>
-        <RouterLink to="/about" style="color: gold;">About</RouterLink>
-        <RouterLink to="/des" style="color: gold;">Demon's Souls</RouterLink>
-        <RouterLink to="/ds" style="color: gold;">Dark Souls</RouterLink>
-        <RouterLink to="/bb" style="color: gold;">Bloodborne</RouterLink>
-        <RouterLink to="/er" style="color: gold;">Elden Ring</RouterLink>
+        <RouterLink to="/" style="color:rgb(211, 208, 190);">Home</RouterLink>
+        <RouterLink to="/about" style="color:rgb(211, 208, 190);">About</RouterLink>
+        <RouterLink to="/des" style="color:rgb(211, 208, 190);">Demon's Souls</RouterLink>
+        <RouterLink to="/ds" style="color:rgb(211, 208, 190);">Dark Souls</RouterLink>
+        <RouterLink to="/bb" style="color:rgb(211, 208, 190);">Bloodborne</RouterLink>
+        <RouterLink to="/er" style="color:rgb(211, 208, 190);">Elden Ring</RouterLink>
       </nav>
     </div>
   </header>
