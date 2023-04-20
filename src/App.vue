@@ -7,12 +7,12 @@
     <div class="sidebar">
       <img alt="Estus Flask" class="logo flask-image" src="https://static.wikia.nocookie.net/darksouls/images/0/08/Estus_Flask_%28DSIII%29_-_01.png" />
       <nav>
-        <RouterLink to="/" style="color:rgb(224, 204, 172);">Home</RouterLink>
-        <RouterLink to="/about" style="color:rgb(224, 204, 172);">About</RouterLink>
-        <RouterLink to="/des" style="color:rgb(224, 204, 172);">Demon's Souls</RouterLink>
-        <RouterLink to="/ds" style="color:rgb(224, 204, 172);">Dark Souls</RouterLink>
-        <RouterLink to="/bb" style="color:rgb(224, 204, 172);">Bloodborne</RouterLink>
-        <RouterLink to="/er" style="color:rgb(224, 204, 172);">Elden Ring</RouterLink>
+        <RouterLink to="/" class="navitem">Home</RouterLink>
+        <RouterLink to="/about" class="navitem">About</RouterLink>
+        <RouterLink to="/des" class="navitem">Demon's Souls</RouterLink>
+        <RouterLink to="/ds" class="navitem">Dark Souls</RouterLink>
+        <RouterLink to="/bb" class="navitem">Bloodborne</RouterLink>
+        <RouterLink to="/er" class="navitem">Elden Ring</RouterLink>
       </nav>
     </div>
   </header>
@@ -22,6 +22,11 @@
 </template>
 
 <style scoped>
+
+  .navitem{
+    color: rgb(224, 204, 172);
+  }
+
   header {
     display: contents;
     justify-content: space-between;
@@ -67,7 +72,7 @@
 
   nav a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    border-left-color: rgb(224, 204, 172);;
+    border-left-color: rgb(224, 204, 172);
   }
 
   .main {
@@ -75,14 +80,9 @@
     padding: 1rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 468px) {
     .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-      padding-bottom: 1rem;
-      display:block;
-      text-align:center;
+      width: 30%;
     }
 
     .logo{
@@ -91,7 +91,8 @@
     }
 
     .main {
-      margin-left: 0;
+      margin-left: 80px;
+      font-size: 12px;
     }
   }
 
